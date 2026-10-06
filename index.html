@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta name="theme-color" content="#0b0c0b">
+<title>The Walk In — Intro Scene Shot List</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&family=Montserrat:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* A shot list read on a phone in a dark hallway at 7 a.m.: one committed dark world, paper on print.
+   Palette = the 30 Years campaign (sage, mustard, burnt orange) on the call-sheet ground. */
+:root{
+  --ground:#0b0c0b; --surface:#141613; --surface-2:#1b1e1a;
+  --line:#272c27; --line-strong:#3b433b;
+  --ink:#f1f2ee; --ink-2:#c7ccc5; --muted:#8e978e;
+  --sage:#9FB0A3; --sage-dim:#1f2a22; --mustard:#CB9216; --orange:#BB6024; --orange-bright:#e07a35;
+  --display:'Fraunces',Georgia,serif;
+  --ui:'Montserrat',system-ui,-apple-system,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  --wide:66rem; --measure:42rem;
+}
+html{color-scheme:dark;scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;touch-action:manipulation;background:var(--ground);color:var(--ink);font-family:var(--ui);font-size:1rem;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--sage);-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:2px solid var(--sage);outline-offset:3px}
+h1,h2{font-family:var(--display);font-weight:300;letter-spacing:-.01em;line-height:1;margin:0;text-wrap:balance}
+h1 em,h2 em{font-style:italic;color:var(--sage)}
+.eyebrow{font-family:var(--ui);font-weight:700;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--orange-bright);margin:0}
+.wrap{max-width:var(--wide);margin:0 auto;padding:0 1.25rem}
+
+/* Masthead */
+.masthead{padding:2.75rem 0 1.5rem;border-bottom:1px solid var(--line)}
+.masthead h1{font-size:clamp(3.2rem,12vw,7rem);margin:.5rem 0 1.4rem}
+.slate{display:grid;grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr));gap:.9rem 1.5rem;margin:0 0 1.5rem;padding:1rem 0;border-top:2px solid var(--orange);border-bottom:1px solid var(--line);font-family:var(--mono)}
+.slate div{min-width:0}
+.slate dt{font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 .25rem}
+.slate dd{margin:0;font-size:.92rem;color:var(--ink);font-variant-numeric:tabular-nums;line-height:1.35}
+.brief{max-width:var(--measure);font-size:1.15rem;line-height:1.5;margin:0}
+.brief em{color:var(--sage);font-style:italic}
+.brief + .brief{margin-top:.9rem;font-size:1rem;color:var(--ink-2)}
+
+/* Sticky nav */
+.blocks{position:sticky;top:0;z-index:5;background:rgba(11,12,11,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.blocks .wrap{display:flex;align-items:center;gap:.75rem}
+.blocks ul{list-style:none;margin:0;padding:.5rem 0;display:flex;gap:.35rem;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0;-webkit-overflow-scrolling:touch;-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 2.5rem),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 2.5rem),transparent);padding-right:2.5rem}
+.blocks ul::-webkit-scrollbar{display:none}
+.blocks a{display:inline-flex;align-items:center;min-height:2.5rem;font-family:var(--ui);font-weight:700;font-size:.66rem;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-2);text-decoration:none;white-space:nowrap;padding:0 .8rem;border:1px solid var(--line);border-radius:50px}
+.blocks a:hover{border-color:var(--line-strong);color:var(--ink)}
+.blocks a.util{color:var(--sage);border-color:transparent}
+.progress{font-family:var(--mono);font-size:.8rem;font-variant-numeric:tabular-nums;color:var(--ink);white-space:nowrap;padding:.45rem .65rem;background:var(--sage-dim);border-radius:4px;flex:none}
+.progress b{font-weight:600;color:var(--sage)}
+.progress small{color:var(--muted);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;margin-left:.35rem}
+
+/* Sections */
+section{scroll-margin-top:4.25rem}
+.section,.block{padding:2.75rem 0 0}
+.section-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:.35rem 1rem;border-top:2px solid var(--orange);padding-top:.9rem;margin-bottom:.35rem}
+.count{font-family:var(--mono);font-size:.72rem;letter-spacing:.04em;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.section h2,.block h2{font-size:clamp(2rem,6vw,3.1rem)}
+.lede{font-family:var(--display);font-style:italic;font-weight:300;color:var(--ink-2);max-width:var(--measure);margin:.6rem 0 1.4rem;font-size:1.25rem;line-height:1.4}
+p{max-width:var(--measure)}
+h3{font-family:var(--ui);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 .7rem;font-weight:700}
+
+/* Tables */
+.spec{font-family:var(--mono);font-size:.88rem;border-collapse:collapse;width:100%}
+.spec th,.spec td{text-align:left;vertical-align:top;padding:.55rem 0;border-bottom:1px solid var(--line)}
+.spec th{font-weight:400;font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);width:7.5rem;padding-right:1rem}
+.spec td{color:var(--ink)}
+.spec td small{display:block;color:var(--muted);font-size:.78rem;margin-top:.15rem;font-family:var(--ui);font-weight:400}
+.spec td.hot{color:var(--mustard);font-weight:600}
+.two{display:grid;grid-template-columns:1fr;gap:1.75rem 2.5rem}
+@media(min-width:52rem){.two{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}}
+.stack{display:grid;gap:1.75rem;align-content:start}
+.fps{font-family:var(--mono);font-size:.84rem;width:100%;border-collapse:collapse}
+.fps td{padding:.5rem 0;border-bottom:1px solid var(--line);vertical-align:top}
+.fps td:first-child{color:var(--ink-2);padding-right:1rem;font-family:var(--ui)}
+.fps td:last-child{text-align:right;white-space:nowrap;color:var(--mustard);font-weight:600;font-variant-numeric:tabular-nums}
+.fov{font-family:var(--mono);font-size:.84rem;width:100%;border-collapse:collapse}
+.fov th{font-weight:400;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-align:left;padding:0 .6rem .5rem 0;border-bottom:1px solid var(--line-strong)}
+.fov td{padding:.5rem .6rem .5rem 0;border-bottom:1px solid var(--line);vertical-align:top;font-variant-numeric:tabular-nums}
+.fov td.n{color:var(--mustard);font-weight:600}
+.fov td.u{font-family:var(--ui);color:var(--ink-2);font-size:.9rem}
+.fov tr.gap td{color:var(--muted)}
+.fov tr.gap td.n{color:var(--muted)}
+.fov tr.gap td.u{color:var(--muted)}
+
+/* Rules */
+.rules{list-style:none;margin:0;padding:0}
+.rules li{padding:.55rem 0 .55rem 1.35rem;border-bottom:1px solid var(--line);position:relative;max-width:var(--measure)}
+.rules li::before{content:"";position:absolute;left:0;top:1rem;width:.55rem;height:.55rem;background:var(--orange)}
+.rules strong{font-family:var(--ui);font-weight:700;font-size:.92rem;letter-spacing:.01em}
+
+/* VO map */
+.vo{width:100%;border-collapse:collapse;font-size:.95rem}
+.vo th{font-family:var(--ui);font-weight:700;font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-align:left;padding:0 1rem .55rem 0;border-bottom:1px solid var(--line-strong)}
+.vo td{padding:.8rem 1rem .8rem 0;border-bottom:1px solid var(--line);vertical-align:top}
+.vo td.t{font-family:var(--mono);font-size:.8rem;color:var(--mustard);white-space:nowrap;font-variant-numeric:tabular-nums}
+.vo td.q{font-family:var(--display);font-style:italic;font-weight:300;font-size:1.12rem;line-height:1.35;color:var(--ink)}
+.vo td.q small{display:block;font-family:var(--ui);font-style:normal;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:.35rem}
+.vo td.p{color:var(--ink-2)}
+.vo td.p b{color:var(--ink);font-weight:700}
+.vo td.d{font-family:var(--mono);font-size:.74rem;color:var(--sage);white-space:nowrap;letter-spacing:.06em}
+.vo td.d::before{content:"";display:inline-block;width:.5rem;height:.5rem;background:var(--orange);margin-right:.5rem;vertical-align:1px}
+.vo tr.pre td.q{color:var(--ink-2)}
+@media(max-width:52rem){
+  .vo thead{display:none}
+  .vo tr{display:block;padding:.9rem 0;border-bottom:1px solid var(--line)}
+  .vo td{display:block;border:0;padding:.15rem 0}
+  .vo td.d{padding-bottom:.35rem}
+}
+
+/* Shots */
+.block.done .count{color:var(--sage)}
+.block.done h2{color:var(--muted)}
+.shots{list-style:none;margin:0 0 1.5rem;padding:0;border-top:1px solid var(--line)}
+.shot{display:grid;grid-template-columns:1.4rem 1fr;gap:.9rem;align-items:start;padding:.95rem 0;border-bottom:1px solid var(--line);cursor:pointer;min-height:3rem;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none;position:relative}
+.shot input{position:absolute;opacity:0;width:1px;height:1px;margin:0}
+.box{width:1.4rem;height:1.4rem;margin-top:.1rem;border:2px solid var(--line-strong);border-radius:4px;position:relative;transition:background .15s,border-color .15s}
+.shot:hover .box{border-color:var(--sage)}
+.shot input:focus-visible + .box{outline:2px solid var(--sage);outline-offset:3px}
+.shot input:checked + .box{background:var(--sage);border-color:var(--sage)}
+.shot input:checked + .box::after{content:"";position:absolute;left:.38rem;top:.12rem;width:.35rem;height:.7rem;border:solid #0b0c0b;border-width:0 3px 3px 0;transform:rotate(45deg)}
+.shot .txt{min-width:0}
+.shot input:checked ~ .txt{color:var(--muted)}
+.shot input:checked ~ .txt strong{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--line-strong)}
+.shot strong{font-family:var(--ui);font-weight:700;font-size:.95rem;letter-spacing:.005em;display:block;margin-bottom:.15rem}
+.shot strong .id{font-family:var(--mono);font-weight:600;color:var(--mustard);margin-right:.5rem;font-size:.82rem}
+.shot .d{color:var(--ink-2);font-size:.97rem;display:block;max-width:var(--measure)}
+.shot .m{display:flex;gap:.4rem;flex-wrap:wrap;margin-top:.5rem}
+.tag{display:inline-block;font-family:var(--mono);font-size:.68rem;letter-spacing:.05em;color:var(--sage);border:1px solid var(--sage-dim);background:var(--sage-dim);padding:.4rem .5rem;border-radius:4px;white-space:nowrap;line-height:1}
+.tag.cam{color:var(--mustard);background:transparent;border-color:var(--line-strong);white-space:normal;line-height:1.35;padding:.3rem .5rem}
+.tag.cue{color:var(--ink-2);background:transparent;border-color:var(--line);white-space:normal;line-height:1.35;padding:.3rem .5rem}
+.shot input:checked ~ .txt .tag{opacity:.5}
+.note{font-family:var(--ui);font-size:.9rem;color:var(--ink-2);background:var(--surface);border-left:3px solid var(--orange);padding:.75rem .95rem;margin:0 0 1.75rem;line-height:1.5;max-width:var(--measure)}
+.note b{color:var(--mustard);font-weight:700}
+
+/* Schedule */
+.sched{width:100%;border-collapse:collapse;font-size:.95rem}
+.sched td{padding:.7rem 1rem .7rem 0;border-bottom:1px solid var(--line);vertical-align:top}
+.sched td.t{font-family:var(--mono);font-size:.8rem;color:var(--mustard);white-space:nowrap;font-variant-numeric:tabular-nums;width:7rem}
+.sched td.w{color:var(--ink-2)}
+.sched td.w b{color:var(--ink)}
+.sched td.who{font-family:var(--mono);font-size:.72rem;color:var(--muted);white-space:nowrap}
+@media(max-width:52rem){.sched td.who{display:block;padding-top:0;white-space:normal}.sched tr{display:block;padding:.4rem 0}.sched td{display:block;border:0;padding:.15rem 0}.sched tr{border-bottom:1px solid var(--line)}}
+
+/* Wrap + footer */
+.wrapup{padding:2.75rem 0 1rem}
+.btn{display:inline-flex;align-items:center;min-height:2.75rem;padding:0 1rem;border:1px solid var(--line-strong);border-radius:4px;font-family:var(--ui);font-weight:700;font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:var(--ink-2)}
+.btn:hover{border-color:var(--sage);color:var(--ink)}
+footer{margin-top:2.5rem;padding:1.5rem 0 3rem;border-top:1px solid var(--line);font-family:var(--mono);font-size:.72rem;color:var(--muted);line-height:1.7}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.box{transition:none}}
+
+@media print{
+  @page{margin:11mm 12mm}
+  :root{--ground:#fff;--surface:#f4f1ea;--surface-2:#ece8df;--line:#cfcac0;--line-strong:#8a857a;--ink:#000;--ink-2:#222;--muted:#555;--sage:#4d6b52;--sage-dim:#e6ebe6;--mustard:#8a6200;--orange:#9A4A17;--orange-bright:#9A4A17;--measure:100%}
+  html{color-scheme:light}
+  body{font-size:9.5pt;line-height:1.4}
+  .wrap{padding:0;max-width:none}
+  .blocks{display:none}
+  .masthead{padding:0 0 .8rem}
+  .masthead h1{font-size:36pt;margin:.3rem 0 .8rem}
+  .brief{font-size:10.5pt}
+  .brief + .brief{font-size:9.5pt}
+  .lede{font-size:11pt;margin:.4rem 0 .8rem}
+  .section h2,.block h2{font-size:20pt}
+  .section,.block{padding-top:1rem}
+  .section-head{padding-top:.5rem}
+  /* Letter at 96 dpi is under the 52rem breakpoint: force the two-column grids and the real table layouts back on */
+  .two{grid-template-columns:1fr 1fr;gap:1rem 1.6rem}
+  .vo thead{display:table-header-group}
+  .vo tr,.sched tr{display:table-row;padding:0}
+  .vo td,.sched td{display:table-cell;border-bottom:1px solid var(--line);padding:.45rem .7rem .45rem 0}
+  .vo td.q{font-size:10pt}
+  .sched td.who{display:table-cell;white-space:nowrap}
+  .shot{break-inside:avoid;padding:.35rem 0;gap:.6rem}
+  .shot .d{font-size:9.5pt}
+  .shot .m{margin-top:.3rem}
+  .tag{padding:.25rem .4rem;font-size:.62rem;border-color:#bbb;background:transparent}
+  .shots{margin-bottom:.8rem}
+  .rules li{padding:.35rem 0 .35rem 1.1rem}
+  .vo tr,.sched tr,.rules li,.fov tr,.spec tr,.fps tr{break-inside:avoid}
+  .note{padding:.5rem .7rem;margin-bottom:1rem}
+  .box{border-color:#999}
+  a{text-decoration:none;color:inherit}
+  footer{padding:1rem 0 0;margin-top:1.2rem}
+  #reset{display:none}
+  .section-head,h2,h3,.lede{break-after:avoid}
+  .note{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="wrap">
+    <p class="eyebrow">The Life Church · 30th Anniversary Film · Intro scene shot list</p>
+    <h1>The Walk <em>In</em></h1>
+    <dl class="slate">
+      <div><dt>Shoot day</dt><dd>Wed 7 Oct 2026<br>exterior at first light</dd></div>
+      <div><dt>Cameras</dt><dd>2 × RED Komodo-X 6K<br>matched settings</dd></div>
+      <div><dt>Glass</dt><dd>RF 24–70 ƒ/2.8 · RF 70–200 ƒ/2.8<br>+ one wide zoom (see Lenses)</dd></div>
+      <div><dt>Base</dt><dd>24p · 6K 17:9 · R3D<br>48 fps for the slow passes</dd></div>
+      <div><dt>Screen time</dt><dd>~1:30 under the VO<br>script: montage 1:30, card 2:00</dd></div>
+      <div><dt>Shots</dt><dd><span id="shot-total">0</span> in 5 blocks</dd></div>
+    </dl>
+    <p class="brief">The film opens in the present, inside the <em>“all of this”</em> Pastor John is asked about. His scripted voiceover plays over one Sunday morning: Pastors John and Leslie park, walk in the back door, meet the team in the green room, look over the service flows, pray, and John walks out to preach. Then the montage takes over and lands on <em>The Life Church: 30 Years of Faithful Ministry</em>.</p>
+    <p class="brief">The scene is built on <strong>four doors</strong>: the car door, the back door, the green-room door, the backstage door. Each one is a cut point and a step further inside. The camera <strong>follows</strong>: it moves behind or beside them, and from ahead it waits for them, all the way to the last door, when John walks into the light. Tick shots as you get them; ticks save on this device. Slate the shot number from this page.</p>
+  </div>
+</header>
+
+<nav class="blocks" aria-label="Sections">
+  <div class="wrap">
+    <ul>
+      <li><a href="#plan" class="util">The plan</a></li>
+      <li><a href="#settings" class="util">Settings</a></li>
+      <li><a href="#lenses" class="util">Lenses</a></li>
+      <li><a href="#b1">01 The lot</a></li>
+      <li><a href="#b2">02 The hall</a></li>
+      <li><a href="#b3">03 Green room</a></li>
+      <li><a href="#b4">04 The door</a></li>
+      <li><a href="#b5">05 Pickups</a></li>
+      <li><a href="#sound" class="util">Sound</a></li>
+      <li><a href="#staging" class="util">Staging</a></li>
+      <li><a href="#schedule" class="util">Schedule</a></li>
+      <li><a href="#wrap" class="util">Wrap</a></li>
+    </ul>
+    <div class="progress" aria-live="polite"><b id="progress">0 / 0</b><small>done</small></div>
+  </div>
+</nav>
+
+<main>
+
+<!-- THE PLAN -->
+<section class="section" id="plan">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">The plan</p><span class="count">VO lines from the script, verbatim</span></div>
+    <h2>Picture against the <em>voiceover</em></h2>
+    <p class="lede">About 180 words of VO: roughly 80–90 seconds at Pastor John's pace. Add the 15-second cold open and the last line lands near 1:40, not the script's 1:30: the edit will trim the open or let the montage start later. Times below are a guide for the shoot, not a lock. If the VO is already recorded, time these beats against the actual read before the day.</p>
+    <table class="vo">
+      <thead><tr><th>Time</th><th>Voiceover</th><th>Picture</th><th>Door</th></tr></thead>
+      <tbody>
+        <tr class="pre"><td class="t">0:00–0:15</td><td class="q">Cold open. No VO yet: natural sound and the music bed.<small>the lot, the car, two doors</small></td><td class="p">The rear lot in low morning light. The car pulls in and parks. Two car doors open. Feet to the pavement. <b>Shots 1.1–1.4</b></td><td class="d">01 car door</td></tr>
+        <tr><td class="t">0:15–0:27</td><td class="q">“Maybe the most common question I get about The Life Church is, ‘Did I see all of this when we were just starting out 30 years ago?’”</td><td class="p">Behind them, walking to the back door. The building fills the frame ahead. A hand on the handle. <b>Shots 1.5–1.8</b></td><td class="d">02 back door</td></tr>
+        <tr><td class="t">0:27–0:33</td><td class="q">“I'm never sure exactly what they mean when they say ALL OF THIS.”</td><td class="p">From inside the hallway looking out: the door opens and two silhouettes step in out of the light. The door closes behind them. <b>Shot 2.1</b></td><td class="d">02 back door</td></tr>
+        <tr><td class="t">0:33–0:50</td><td class="q">“Maybe they're talking about the Sunday Service crowds, or the Conferences, or maybe it's the Global Footprint we now have with locations stretching from Memphis to New York to Italy. And places in between.”</td><td class="p">The hallway walk, long lens and follow. Anything on the walls that says <em>more than Memphis</em>: location photos, campaign art. The countdown clock as a cutaway. The edit may also drop archive here. <b>Shots 2.2–2.5, 3.6</b></td><td class="d">02 → 03</td></tr>
+        <tr><td class="t">0:50–0:56</td><td class="q">“Maybe they're talking about the amazing team that we have.”</td><td class="p"><b>The hard sync.</b> The green-room door opens and the team turns to greet them on the word “team”. Hugs, handshakes, faces. <b>Shots 3.1–3.3</b></td><td class="d">03 green room</td></tr>
+        <tr><td class="t">0:56–1:02</td><td class="q">“Did I see it? Of course, the answer is, ‘No!’”</td><td class="p">A laugh in the greetings, or John's grin over the service flow with Parker. One beat of levity before the room goes quiet. <b>Shots 3.2, 3.4</b></td><td class="d">03 green room</td></tr>
+        <tr><td class="t">1:02–1:18</td><td class="q">“If you could have seen and felt what it was like 30 years ago… Oh man… There was so much that you would have had to dig through to find the potential. But it was there.”</td><td class="p">Quieter. The service-flow review, standing, finger on the page. Then the circle forms: hands on shoulders, heads bowing. <b>Shots 3.4–3.5, 3.7</b></td><td class="d">03 green room</td></tr>
+        <tr><td class="t">1:18–1:22</td><td class="q">“The heart was there and the vision and the hard work…”</td><td class="p">Inside the prayer, tight: John mid-prayer, Leslie's closed eyes, a hand gripping a hand. <b>Shots 3.7–3.9</b></td><td class="d">03 green room</td></tr>
+        <tr><td class="t">1:22–1:33</td><td class="q">“No, I didn't really see all of this back then, but I always felt, even from the beginning, that God was going to do something significant.”</td><td class="p">John alone. Out of the green room, down the hall through the pools of light, the mic goes on, his hand on the backstage door. <b>Shots 4.1–4.6</b></td><td class="d">04 backstage</td></tr>
+        <tr><td class="t">1:33–1:40</td><td class="q">“Now, here we are 30 years later and Leslie and I are amazed.”</td><td class="p">The door opens and the light floods in. He walks into the room. Hold the threshold. Cut to the montage. <b>Shots 4.7–4.9</b></td><td class="d">04 backstage</td></tr>
+      </tbody>
+    </table>
+    <p class="note" style="margin-top:1.5rem"><b>Keep rolling past the prayer and out the door.</b> The intro may not need it, but the team analysis holds a possible last shot for the whole film: after the Future sit-down, John and Leslie walking into the service together, closing the frame this scene opens. Shoot it twice in Block 04 (shot 4.10).</p>
+  </div>
+</section>
+
+<!-- SETTINGS -->
+<section class="section" id="settings">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Camera setup</p><span class="count">match both bodies before the first take</span></div>
+    <h2>Settings</h2>
+    <p class="lede">Real time at 24 for everything with people talking or praying. 48 fps passes for the walks and the details. Shutters that integrate whole 120 Hz cycles indoors so nothing pulses.</p>
+    <div class="two">
+      <table class="spec">
+        <tr><th>Cameras</th><td>2 × RED Komodo-X 6K <small>A = moving (gimbal), B = long lens (monopod / tripod)</small></td></tr>
+        <tr><th>Format</th><td>6K 17:9 · 6144 × 3240 · R3D <small>HQ on the hero shots, MQ on pickups. Stay in R3D for the grade; ProRes only exists at 4K on this body</small></td></tr>
+        <tr><th>Project</th><td class="hot">23.976 (24p)</td></tr>
+        <tr><th>Capture</th><td class="hot">24 real time · 48 for the slow passes <small>48 conforms to a clean 2× and also drops back to real time 2:1 if the edit changes its mind. 60 conformed is just as smooth, at 2.5×, but it only plays clean at that one speed (real time from 60 is a 2–3 cadence, and 2× drops every fifth frame). Shoot 60 if you want 180° and flicker safety in one setting: 60 at 180° is 1/120. 6K goes to 80 for one hero slow pass. At 48, 1/60 is a 288° angle: same exposure as the 24p coverage and an exact match if the clip drops back to real time, at the cost of a softer, smearier slow-mo; 1/120 for the inserts</small></td></tr>
+        <tr><th>Shutter</th><td>1/60 (144°) indoors · 1/48 (180°) outside <small>Memphis mains is 60 Hz, so the ripple is 120 Hz: 1/60 and 1/120 integrate whole cycles and are safe at any frame rate; 1/48 and 1/96 are not. At 24 the blur difference between 144° and 180° is invisible. At 48 fps indoors: 1/60 (288°) for walks and the circle, 1/120 (144°) for inserts, never 1/96: a 180° shutter at 48 alternates bright and dark frames under ripple. Test first: lock off on a wall at 1/48 for ten seconds and watch the waveform. If it holds still, the fixtures are clean and 180° is yours everywhere. Not 30 fps: in a 24p film it judders at real time and looks subtly wrong conformed</small></td></tr>
+        <tr><th>ISO</th><td>800 <small>up to 1600 backstage. Expose with the goal posts / false color; protect the stage light in the reveal</small></td></tr>
+        <tr><th>Iris</th><td>ƒ/2.8–4 coverage · ƒ/4–5.6 on the walking gimbal shots · wide open for details <small>focus safety on the moves, bloom on the inserts</small></td></tr>
+        <tr><th>ND</th><td class="hot">No internal ND on the Komodo-X <small>the lot at 24p, 1/48, ISO 800 in morning sun wants ~6 stops at ƒ/2.8 (ND 1.8). Pack a matte-box set or a VND that reaches 1.8–2.1. Rebalance the gimbal with it on</small></td></tr>
+        <tr><th>White balance</th><td>5600 K outside · metered per room inside <small>gray card in the green room, backstage and the hall; set it once per block and leave it. Both cameras on the same number</small></td></tr>
+        <tr><th>Color</th><td>IPP2 · Log3G10 / RWG · monitor LUT <small>same look preset on both bodies</small></td></tr>
+        <tr><th>Timecode</th><td class="hot">Jam both cameras and the recorder <small>or slate every take with a clap. Two cameras plus a lav will not sync themselves</small></td></tr>
+        <tr><th>Audio</th><td>Shotgun on A for reference · lav on John <small>see Sound</small></td></tr>
+      </table>
+      <div class="stack">
+        <div>
+          <h3>Flicker · shutter by place (60 Hz)</h3>
+          <table class="fps">
+            <tr><td>Green-room display with the countdown, lobby TVs</td><td>1/60 or 1/120</td></tr>
+            <tr><td>Hallway and backstage LED / fluorescent fixtures</td><td>1/60 or 1/120</td></tr>
+            <tr><td>Stage LED wall in the reveal (check the monitor; step up if it rolls)</td><td>1/60 → 1/120</td></tr>
+            <tr><td>Slow passes indoors at 48 fps: walks, the circle, anything the edit may also want at real time</td><td>1/60 (288°)</td></tr>
+            <tr><td>Slow passes indoors at 48 fps: inserts that need definition (hands, mic pack, clock)</td><td>1/120 (144°)</td></tr>
+            <tr><td>Slow passes indoors at 60 fps</td><td>1/120 (180°)</td></tr>
+            <tr><td>Outside, daylight (add ND)</td><td>1/48 · 48 fps at 1/96</td></tr>
+          </table>
+        </div>
+        <div>
+          <h3>Ground rules</h3>
+          <ul class="rules">
+            <li><strong>Follow, don't lead.</strong> When the camera moves, it moves behind or beside them. From ahead it holds still and lets them walk into the frame. The big reverse is 4.8.</li>
+            <li><strong>Doors are the cuts.</strong> Hold on every door for five seconds after it closes. The edit will use the dark.</li>
+            <li><strong>Slow or still.</strong> Gimbal pushes at walking pace, locked frames on sticks. No whip pans, no handheld drift.</li>
+            <li><strong>Faces, then hands, then the room.</strong> One clean wide per block for geography; everything else tight.</li>
+            <li><strong>Heads and tails.</strong> Roll five seconds before the action and hold five after. Three takes of every walk.</li>
+            <li><strong>Let it be real.</strong> They do what they do on a Sunday. Nobody looks at the lens. The first greeting is the one; cover it with both cameras.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LENSES -->
+<section class="section" id="lenses">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Lensing</p><span class="count">Komodo-X S35 · 27.03 mm wide · ≈1.33× vs full frame</span></div>
+    <h2>Will the two zooms <em>do it?</em></h2>
+    <p class="lede">Yes for about four shots in five. The 24–70 is the A-camera lens for the green room, the review, the mic-up and the walk-with. The 70–200 is the B-camera lens for everything compressed and candid. The gap is at the wide end.</p>
+    <div class="two">
+      <div>
+        <table class="fov">
+          <thead><tr><th>Focal</th><th>Horiz. FOV</th><th>Full-frame feel</th><th>Use it for</th></tr></thead>
+          <tbody>
+            <tr class="gap"><td class="n">15 mm</td><td>84°</td><td>20 mm</td><td class="u">Hallway follow on the gimbal · the whole prayer circle · the floor shot (3.9). <em>Not in the kit.</em></td></tr>
+            <tr class="gap"><td class="n">18 mm</td><td>74°</td><td>24 mm</td><td class="u">Green-room geography wide with seven people in it. <em>Not in the kit.</em></td></tr>
+            <tr><td class="n">24 mm</td><td>59°</td><td>32 mm</td><td class="u">Room wides, the follow behind them in the lot, the backstage reveal from behind John.</td></tr>
+            <tr><td class="n">35 mm</td><td>42°</td><td>47 mm</td><td class="u">Mediums inside the group, the side-on walk-with, the service-flow three-shot.</td></tr>
+            <tr><td class="n">50 mm</td><td>30°</td><td>67 mm</td><td class="u">Over-the-shoulders, faces in the prayer, John at the door.</td></tr>
+            <tr><td class="n">70 mm</td><td>22°</td><td>93 mm</td><td class="u">Close-ups and details: hands, the mic pack, the flow sheet, the clock.</td></tr>
+            <tr><td class="n">135 mm</td><td>11°</td><td>180 mm</td><td class="u">Hallway from the far end as they walk to camera; faces across the green room.</td></tr>
+            <tr><td class="n">200 mm</td><td>8°</td><td>266 mm</td><td class="u">The car across the lot with the building stacked behind it. The long walk to the door.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="stack">
+        <div>
+          <h3>The one lens to add</h3>
+          <ul class="rules">
+            <li><strong>Canon RF 15–35 ƒ/2.8L IS</strong> (20–47 mm feel). The hallway follow, the green-room wide and the prayer circle all live under 24 mm on this sensor. One borrow or rental fixes the whole gap.</li>
+            <li><strong>Fallbacks.</strong> RF 14–35 ƒ/4L IS (cheaper; it leans on in-camera distortion correction the Komodo doesn't apply, so expect barrel at 14–16). Sigma 18–35 ƒ/1.8 Art on the EF-to-RF adapter from the Komodo box: the classic S35 doc lens, ƒ/1.8 helps backstage, no IS. Any 16–18 mm prime also works.</li>
+            <li><strong>Nice to have.</strong> One fast prime for backstage: RF 50 ƒ/1.2L (67 feel) or RF 35 ƒ/1.8. The mic-up and the glow along the door edge at ƒ/1.2–1.8 are worth it. Without it, 24–70 at ƒ/2.8 and ISO 1600 is fine.</li>
+            <li><strong>If no wide shows up.</strong> Lean long. Shoot the hallway from the far end on the 70–200. Shoot the green room as mediums and details, not one wide. Put the gimbal at 24, low and close, and accept tighter follow frames: intimacy instead of geography. It still cuts.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Focus, IS and support</h3>
+          <ul class="rules">
+            <li><strong>AF is an assist, not a tracker.</strong> The RF L zooms talk to the Komodo-X (iris, IS, AF), but it is not Canon-body face tracking. On the moving shots: ƒ/4–5.6, focus set at the working distance, and the operator keeps that distance. Use AF to re-acquire between takes.</li>
+            <li><strong>IS on</strong> for the monopod and any handheld. <strong>IS off</strong> on the tripod. On the gimbal, test one pass each way; IS can fight the gimbal and jitter.</li>
+            <li><strong>Breathing.</strong> The 24–70 breathes visibly on a rack. Do the clock-to-John rack (3.6) on the 70–200 instead.</li>
+            <li><strong>Global shutter.</strong> No skew on the car, the walks or the LED wall, so the pans and the fast moves are safe. Flicker is still about shutter speed, hence 1/60 indoors.</li>
+            <li><strong>Reframe room.</strong> 6K to a 4K finish is a free 1.5× punch-in. Frame the long-lens shots a little loose and tighten in the cut.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOCK 01 -->
+<section class="block" id="b1">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Block 01 · door one · first light</p><span class="count block-count">0/0</span></div>
+    <h2>The <em>lot</em></h2>
+    <p class="lede">Sunrise is about 7:00. The light that reads as a Sunday morning is gone by 8:30, so this block goes first. Park the car so the sun is behind or beside them on the walk to the door: rim light and long shadows, never a flat frontal sun.</p>
+    <p class="note"><b>Cold open.</b> These shots carry the first fifteen seconds with no voiceover: natural sound and music. Record the car, the doors and the footsteps clean (shotgun on A, and let the lav run from the moment John gets out).</p>
+    <ul class="shots">
+      <li><label class="shot"><input type="checkbox" data-id="1-1"><span class="box"></span><span class="txt"><strong><span class="id">1.1</span>The lot, establishing</strong><span class="d">Locked wide from across the lot: the building in low light, the empty space. Hold ten seconds, then the car enters frame, parks, and sits. Long lens stacks the building behind the car.</span><span class="m"><span class="tag cam">B · 70–200 @ 100–135 · tripod</span><span class="tag">24 fps · 1/48 · ND</span><span class="tag cue">cold open</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="1-2"><span class="box"></span><span class="txt"><strong><span class="id">1.2</span>Wheels into the space</strong><span class="d">Camera on the ground, tire height, as the car rolls into the space and stops. Shallow, the wheel in focus, the lot soft behind.</span><span class="m"><span class="tag cam">A · 24–70 @ 70 · bag or low sticks</span><span class="tag">48 fps</span><span class="tag cue">cold open</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="1-3"><span class="box"></span><span class="txt"><strong><span class="id">1.3</span>Two car doors</strong><span class="d">Static two-shot from behind the car or through the windshield: both doors open, two people step out. Natural sound. Hold until they close the doors and turn toward the building.</span><span class="m"><span class="tag cam">A · 24–70 @ 35–50 · tripod</span><span class="tag">24 fps · sound</span><span class="tag cue">cold open</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="1-4"><span class="box"></span><span class="txt"><strong><span class="id">1.4</span>Door details</strong><span class="d">Leslie's hand on the door handle. Shoes to the pavement. The bag over a shoulder. The car door swinging shut. Long lens, wide open, 48.</span><span class="m"><span class="tag cam">B · 70–200 @ 135–200 · monopod</span><span class="tag">48 fps</span><span class="tag cue">cold open</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="1-5"><span class="box"></span><span class="txt"><strong><span class="id">1.5</span>The walk, from behind</strong><span class="d">The follow shot. Gimbal at waist height behind and slightly to one side of them, their backs and the door ahead growing in frame. Walking pace. This is the frame under “Did I see all of this”.</span><span class="m"><span class="tag cam">A · 24–70 @ 24–35 · gimbal</span><span class="tag">24 fps · ƒ/4–5.6</span><span class="tag cue">0:15 “most common question”</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="1-6"><span class="box"></span><span class="txt"><strong><span class="id">1.6</span>The walk, long and side-on</strong><span class="d">From near the door, side angle, long end: the two of them walking toward and past camera, compressed, backlit, the lot falling soft behind. One pass at 24 with sound, one at 48.</span><span class="m"><span class="tag cam">B · 70–200 @ 135–200 · monopod</span><span class="tag">24 + 48 fps</span><span class="tag cue">0:15–0:27</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="1-7"><span class="box"></span><span class="txt"><strong><span class="id">1.7</span>Faces approaching</strong><span class="d">From the door looking back at them walking to camera, talking, faces lit by the open sky. A locked medium at 50–70: let them walk into it.</span><span class="m"><span class="tag cam">A · 24–70 @ 50–70 · tripod</span><span class="tag">24 fps · sound</span><span class="tag cue">0:15–0:27</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="1-8"><span class="box"></span><span class="txt"><strong><span class="id">1.8</span>The back door, outside</strong><span class="d">Locked wide of the door; they enter frame, John opens it, they go in, the door closes. Hold five seconds on the closed door. Then the insert: a hand on the handle, the badge or keypad, 48.</span><span class="m"><span class="tag cam">A · 24–70 @ 35 · tripod</span><span class="tag">24 fps · insert at 48</span><span class="tag cue">0:27 “ALL OF THIS”</span></span></span></label></li>
+    </ul>
+  </div>
+</section>
+
+<!-- BLOCK 02 -->
+<section class="block" id="b2">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Block 02 · door two · while the sun is still low through the door</p><span class="count block-count">0/0</span></div>
+    <h2>The <em>hallway</em></h2>
+    <p class="lede">A short hall is a gift for a long lens. Darken it a little if you can: let them walk through pools of light rather than an even wash.</p>
+    <ul class="shots">
+      <li><label class="shot"><input type="checkbox" data-id="2-1"><span class="box"></span><span class="txt"><strong><span class="id">2.1</span>Inside looking out</strong><span class="d">Camera inside the hall facing the door. It opens and two silhouettes step in out of the bright morning; the door swings shut and the light cuts. Expose between: faces just readable, the outside allowed to go. The transition shot of the whole scene.</span><span class="m"><span class="tag cam">A · 24–70 @ 35 · tripod</span><span class="tag">24 fps · sound</span><span class="tag cue">0:27 “ALL OF THIS”</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="2-2"><span class="box"></span><span class="txt"><strong><span class="id">2.2</span>Hallway follow</strong><span class="d">Gimbal behind them, low, the green-room door ahead at the end of the frame. Wide as you have: 15–18 on the wide zoom, 24 if not. Walking pace, no drift. Three takes.</span><span class="m"><span class="tag cam">A · wide zoom @ 15–18 (or 24–70 @ 24) · gimbal</span><span class="tag">24 fps · ƒ/4–5.6</span><span class="tag cue">0:33 “Sunday Service crowds…”</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="2-3"><span class="box"></span><span class="txt"><strong><span class="id">2.3</span>Hallway, long from the far end</strong><span class="d">From the far end of the hall, or from inside the green-room doorway, long end: they walk toward camera, compressed, the overheads blooming, faces drifting in and out of focus. One pass at 24, one at 48.</span><span class="m"><span class="tag cam">B · 70–200 @ 135–200 · monopod</span><span class="tag">24 + 48 fps</span><span class="tag cue">0:33–0:50</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="2-4"><span class="box"></span><span class="txt"><strong><span class="id">2.4</span>Side-on walk-with</strong><span class="d">If the hall is wide enough: gimbal tracking parallel to them, a medium of the two in profile, the wall sliding past. If not, a locked 35 as they pass through frame.</span><span class="m"><span class="tag cam">A · 24–70 @ 35–50 · gimbal</span><span class="tag">24 fps</span><span class="tag cue">0:33–0:50</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="2-5"><span class="box"></span><span class="txt"><strong><span class="id">2.5</span>Hallway details</strong><span class="d">Shoes on the floor at 48. The Bible or iPad under an arm. A hand brushing the wall. Anything on the walls that says more than Memphis (location photos, campaign art) with the two of them passing soft behind it: the “Global Footprint” beat.</span><span class="m"><span class="tag cam">B · 70–200 @ 70–135 · monopod</span><span class="tag">48 fps</span><span class="tag cue">0:33–0:50 “Global Footprint”</span></span></span></label></li>
+    </ul>
+  </div>
+</section>
+
+<!-- BLOCK 03 -->
+<section class="block" id="b3">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Block 03 · door three · the team</p><span class="count block-count">0/0</span></div>
+    <h2>The <em>green room</em></h2>
+    <p class="lede">Pastor Parker VanBlaricom, Pastor Adam Bartlett, Erin Howell, Jon Howell and Pastor Johnny Hill. The first greeting is the real one, so both cameras roll before the door opens. Then one more pass for the other angles, loose.</p>
+    <p class="note"><b>Light.</b> Augment, don't light. One soft source bounced off the ceiling or through diffusion so faces have a direction, and switch off any fixture that is a different color from the rest. Keep the countdown display running on the screen the whole block (a plausible 10–15 minutes, reset as needed).</p>
+    <ul class="shots">
+      <li><label class="shot"><input type="checkbox" data-id="3-1"><span class="box"></span><span class="txt"><strong><span class="id">3.1</span>The door opens, from inside</strong><span class="d">Wide from a corner of the room: the door opens, John and Leslie step in, the team turns and moves to them. Geography of the room in one frame. Locked, or the slowest push on the gimbal.</span><span class="m"><span class="tag cam">A · wide zoom @ 16–20 (or 24–70 @ 24) · tripod / gimbal</span><span class="tag">24 fps · sound</span><span class="tag cue">0:50 “amazing team”</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="3-2"><span class="box"></span><span class="txt"><strong><span class="id">3.2</span>Greetings, through the room</strong><span class="d">Long lens from the far corner, shooting through foreground shoulders: hugs, handshakes, the laugh. Faces first. Roll early and hold through the whole moment; don't cut on the smile, cut after it.</span><span class="m"><span class="tag cam">B · 70–200 @ 70–135 · monopod</span><span class="tag">24 fps</span><span class="tag cue">0:50–1:02 “team” / “No!”</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="3-3"><span class="box"></span><span class="txt"><strong><span class="id">3.3</span>Greetings, inside the group</strong><span class="d">Gimbal drifting slowly around the group at arm's length: a hand on a shoulder, Leslie laughing with Erin or Jon, Adam and John. Shallow. Second pass only.</span><span class="m"><span class="tag cam">A · 24–70 @ 35–50 · gimbal</span><span class="tag">24 fps</span><span class="tag cue">0:50–1:02</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="3-4"><span class="box"></span><span class="txt"><strong><span class="id">3.4</span>The service flow, standing</strong><span class="d">John and Parker over the flow, standing, Johnny in the three-shot. Cover it four ways: over Parker's shoulder onto John reading; the reverse over John's shoulder onto Parker; the three-shot at 35; the insert of a finger tracing the order on the page or the iPad at 70, 48 fps. Get John's reaction: the nod, the grin.</span><span class="m"><span class="tag cam">A · 24–70 @ 35–70 · monopod</span><span class="tag">B · 70–200 for the faces</span><span class="tag">24 fps · insert 48</span><span class="tag cue">0:56–1:18</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="3-5"><span class="box"></span><span class="txt"><strong><span class="id">3.5</span>Leslie in the room</strong><span class="d">Her own beats, not just background: in conversation with Erin or Jon, a coffee, a laugh, listening to the flow review from a step away. Medium, long end, shallow.</span><span class="m"><span class="tag cam">B · 70–200 @ 70–100 · monopod</span><span class="tag">24 fps</span><span class="tag cue">0:50–1:18</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="3-6"><span class="box"></span><span class="txt"><strong><span class="id">3.6</span>The countdown</strong><span class="d">Three frames of the display: a clean tight of the clock ticking (1/60 shutter, locked); a wide where the clock sits in frame with the team soft in front of it; a rack from the clock to John's face on the 70–200.</span><span class="m"><span class="tag cam">B · 70–200 @ 70–135 · tripod</span><span class="tag">24 fps · 1/60</span><span class="tag cue">0:33–0:50 cutaway</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="3-7"><span class="box"></span><span class="txt"><strong><span class="id">3.7</span>The prayer</strong><span class="d">The circle forms. One wide from a corner as the heads bow (wide zoom), then stay tight for the rest: hands on shoulders, a hand gripping a hand, bowed heads, John mid-prayer, Leslie's closed eyes, Johnny, Adam. A slow gimbal push through a gap in the circle at 35. Real time with sound on both cameras; the prayer audio may matter later even if the intro never uses it.</span><span class="m"><span class="tag cam">A · 24–70 @ 35–50 · gimbal</span><span class="tag">B · 70–200 @ 70–135 · monopod</span><span class="tag">24 fps · sound · lav</span><span class="tag cue">1:02–1:22 “The heart was there”</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="3-8"><span class="box"></span><span class="txt"><strong><span class="id">3.8</span>Amen</strong><span class="d">Faces lifting, the release, a laugh, the hands coming off shoulders, the group breaking. Hold on John and Leslie looking at each other if it happens.</span><span class="m"><span class="tag cam">B · 70–200 @ 70–135 · monopod</span><span class="tag">24 fps</span><span class="tag cue">1:22</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="3-9"><span class="box"></span><span class="txt"><strong><span class="id">3.9</span>The floor shot (needs the wide)</strong><span class="d">Camera on the floor at the center of the circle looking up at the bowed heads. Only possible at 15–18 mm. If the prayer happens once, grab it on the second camera; if the team will pray twice, it is worth the ask.</span><span class="m"><span class="tag cam">A · wide zoom @ 15–18 · floor</span><span class="tag">24 or 48 fps</span><span class="tag cue">1:18 “the vision and the hard work”</span></span></span></label></li>
+    </ul>
+  </div>
+</section>
+
+<!-- BLOCK 04 -->
+<section class="block" id="b4">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Block 04 · door four · John alone</p><span class="count block-count">0/0</span></div>
+    <h2>The <em>walk</em> and the door</h2>
+    <p class="lede">Release the team after the prayer; keep the audio tech and whoever runs the room. The auditorium needs its pre-service look on: house at walk-in level, stage wash and LED wall lit, and a touch of haze so the light has body when the door opens.</p>
+    <ul class="shots">
+      <li><label class="shot"><input type="checkbox" data-id="4-1"><span class="box"></span><span class="txt"><strong><span class="id">4.1</span>Out of the green room</strong><span class="d">From the hall: the door opens, John comes out alone, closes it and walks toward and past camera. Hold on the empty hall after he passes.</span><span class="m"><span class="tag cam">A · 24–70 @ 35–50 · tripod</span><span class="tag">24 fps</span><span class="tag cue">1:22 “I didn't really see all of this”</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="4-2"><span class="box"></span><span class="txt"><strong><span class="id">4.2</span>The walk, from behind</strong><span class="d">Gimbal at his shoulder height, behind him, the backstage door ahead. Through the pools of light. Walking pace. One at 24, one at 48.</span><span class="m"><span class="tag cam">A · 24–70 @ 24–35 · gimbal</span><span class="tag">24 + 48 fps</span><span class="tag cue">1:22–1:33</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="4-3"><span class="box"></span><span class="txt"><strong><span class="id">4.3</span>The walk, long from ahead</strong><span class="d">From the backstage end on the long lens: he walks to camera, face in and out of the light, the hall compressed to nothing behind him. He fills the frame and passes.</span><span class="m"><span class="tag cam">B · 70–200 @ 135–200 · monopod</span><span class="tag">24 + 48 fps</span><span class="tag cue">1:22–1:33</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="4-4"><span class="box"></span><span class="txt"><strong><span class="id">4.4</span>The mic-up</strong><span class="d">The prep area. A medium of John being mic'd by the audio tech: his face, the concentration, the quip. Then the inserts at 48: the pack clipped to the belt, the headset settled over the ear, the transmitter switched on and its LED, the cable tucked. If there is a mirror, John in the mirror adjusting the mic is the frame.</span><span class="m"><span class="tag cam">A · 24–70 @ 50–70 (or the fast prime) · monopod</span><span class="tag">24 fps · inserts 48 · wide open</span><span class="tag cue">1:22–1:33</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="4-5"><span class="box"></span><span class="txt"><strong><span class="id">4.5</span>Waiting at the door</strong><span class="d">John alone at the backstage door, medium and close, the glow of the stage light along the door edge. He breathes, prays, checks the clock if there is a confidence monitor. Hold long. Say nothing; let him be there.</span><span class="m"><span class="tag cam">B · 70–200 @ 70–135 · tripod</span><span class="tag">24 fps · 1/60</span><span class="tag cue">1:28 “something significant”</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="4-6"><span class="box"></span><span class="txt"><strong><span class="id">4.6</span>Hand on the handle</strong><span class="d">The insert. His hand lands on the handle and waits. The light leaks around the door edge. Shallow, 48.</span><span class="m"><span class="tag cam">A · 24–70 @ 70 · monopod</span><span class="tag">48 fps</span><span class="tag cue">1:33</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="4-7"><span class="box"></span><span class="txt"><strong><span class="id">4.7</span>The reveal, from behind</strong><span class="d">Gimbal behind John at 24–35: he pushes the door, the stage light floods the frame, he steps into it. The camera follows to the threshold and stops; we don't go on stage. Expose for the stage and let the door edge flare. One at 24, one at 48. Three takes each.</span><span class="m"><span class="tag cam">A · 24–70 @ 24–35 · gimbal</span><span class="tag">24 + 48 fps · haze</span><span class="tag cue">1:33 “Leslie and I are amazed”</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="4-8"><span class="box"></span><span class="txt"><strong><span class="id">4.8</span>The reverse, from the stage side</strong><span class="d">From the stage side looking back at the door: it opens, John is a silhouette, he walks toward and past camera into the light and becomes lit. Or long from across the stage at 135–200, the door small and bright, John growing in frame.</span><span class="m"><span class="tag cam">B · 70–200 @ 70–200 · tripod</span><span class="tag">24 + 48 fps</span><span class="tag cue">1:33–1:40</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="4-9"><span class="box"></span><span class="txt"><strong><span class="id">4.9</span>From the house</strong><span class="d">The widest frame of the day: the auditorium from the back of the room or the balcony, lit, empty, and John walks onto the stage small in it. A slow push if it's clean. “All of this” in one picture.</span><span class="m"><span class="tag cam">A · wide zoom @ 15–18 (or 24–70 @ 24) · tripod / gimbal</span><span class="tag">24 fps · 1/60</span><span class="tag cue">1:33–1:40 or the montage</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="4-10"><span class="box"></span><span class="txt"><strong><span class="id">4.10</span>John and Leslie walk into the service (film ending option)</strong><span class="d">Together, from behind, through a house door or the backstage door into the lit room. The camera follows and holds at the threshold as they go on without it. Shoot it twice. This is the possible last shot of the whole film, after the Future sit-down.</span><span class="m"><span class="tag cam">A · 24–70 @ 24–35 · gimbal</span><span class="tag">24 fps</span><span class="tag cue">film ending</span></span></span></label></li>
+    </ul>
+  </div>
+</section>
+
+<!-- BLOCK 05 -->
+<section class="block" id="b5">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Block 05 · while the gear is still out</p><span class="count block-count">0/0</span></div>
+    <h2>Pickups and <em>texture</em></h2>
+    <p class="lede">Twenty minutes that save the edit. None of these need the cast.</p>
+    <ul class="shots">
+      <li><label class="shot"><input type="checkbox" data-id="5-1"><span class="box"></span><span class="txt"><strong><span class="id">5.1</span>Exteriors in morning light</strong><span class="d">The building, the sign, the campus from the lot. One wide at 24, one compressed at 135–200. Locked. Grab these before Block 02 if the light is going.</span><span class="m"><span class="tag cam">B · both lenses · tripod</span><span class="tag">24 fps · ND</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="5-2"><span class="box"></span><span class="txt"><strong><span class="id">5.2</span>The empty hallway and the empty green room</strong><span class="d">Lights on, nobody in them. Locked frames matching 2.2 and 3.1. The “before” the edit can open on or cut back to.</span><span class="m"><span class="tag cam">A · 24–70 · tripod</span><span class="tag">24 fps</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="5-3"><span class="box"></span><span class="txt"><strong><span class="id">5.3</span>The clock running down</strong><span class="d">A tight of the countdown passing a round number and into the last minute. Run the timer down for it. 1/60.</span><span class="m"><span class="tag cam">B · 70–200 · tripod</span><span class="tag">24 fps · 1/60</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="5-4"><span class="box"></span><span class="txt"><strong><span class="id">5.4</span>Backstage textures</strong><span class="d">The mic pack on the table before it goes on. Cables. The door edge with the light leaking through. The stage wash from the wings. Shallow, slow.</span><span class="m"><span class="tag cam">A · 24–70 @ 70 · monopod</span><span class="tag">48 fps</span></span></span></label></li>
+      <li><label class="shot"><input type="checkbox" data-id="5-5"><span class="box"></span><span class="txt"><strong><span class="id">5.5</span>Room tone and wild sound</strong><span class="d">Thirty seconds of silence in the lot, the hall, the green room and backstage. Footsteps in the hall, wild. The back door opening and closing, wild, three times.</span><span class="m"><span class="tag cam">recorder + shotgun</span><span class="tag">sound only</span></span></span></label></li>
+    </ul>
+  </div>
+</section>
+
+<!-- SOUND -->
+<section class="section" id="sound">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Sound</p><span class="count">the VO covers most of it; the cold open and the prayer don't</span></div>
+    <h2>What to <em>record</em></h2>
+    <ul class="rules">
+      <li><strong>Lav on John from the car.</strong> Into a recorder, timecode jammed with the cameras. The greetings, the flow review and the prayer are the takes that may be used clean, in this film or the ending.</li>
+      <li><strong>Second lav on Parker</strong> if there is one: the flow review is a two-hander.</li>
+      <li><strong>Shotgun on the A camera</strong> for reference and for the natural sound of the cold open: car doors, footsteps on the lot, the back door, the hall.</li>
+      <li><strong>Room tone</strong> in every space, thirty seconds, everyone still (shot 5.5).</li>
+      <li><strong>Slate or clap every take</strong> if timecode isn't jammed. Two cameras and a recorder will not line themselves up in Premiere without it.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- STAGING -->
+<section class="section" id="staging">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Staging</p><span class="count">a Sunday on a Wednesday</span></div>
+    <h2>Making Wednesday <em>look like Sunday</em></h2>
+    <p class="lede">Everything in frame has to say Sunday morning. Walk every space before call and pull the Wednesday out of it.</p>
+    <div class="two">
+      <div>
+        <h3>Cast and wardrobe</h3>
+        <ul class="rules">
+          <li><strong>John and Leslie in what they would wear to preach.</strong> Their own car, clean. Whatever they carry in on a Sunday (Bible, iPad, bag, coffee) and the same items in the same hands for every take.</li>
+          <li><strong>The team in Sunday clothes</strong>, lanyards or in-ears if they wear them. Phones away.</li>
+          <li><strong>John's mic</strong>: the real pack and headset, and the audio tech who normally does it.</li>
+          <li><strong>Continuity</strong>: jackets on or off, cups, which hand holds the Bible. One person watches it.</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Spaces and screens</h3>
+        <ul class="rules">
+          <li><strong>The back door unlocked</strong> and the alarm off. Nothing propped in it.</li>
+          <li><strong>The countdown running</strong> on the green-room display (and any lobby or backstage screen that could land in frame), showing a plausible 10–15 minutes; reset between takes.</li>
+          <li><strong>The service flow printed for a real Sunday</strong>, or on the iPad, with no Wednesday date readable in the insert.</li>
+          <li><strong>The green room dressed as on a Sunday</strong>: coffee, food, the usual. Clear the clutter that isn't.</li>
+          <li><strong>The auditorium in its pre-service look</strong>: house at walk-in level, stage wash and LED wall lit with real content, a touch of haze for the reveal. The production team needs to be in place for Block 04.</li>
+          <li><strong>Hallway and backstage</strong>: a hidden LED tube at the far end of the hall for an edge; a small source motivated by the stage through the backstage door; otherwise the practicals as they are.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="note" style="margin-top:1.75rem"><b>Weather.</b> Check the forecast the night before. If the lot is a washout, shoot the arrival under the canopy if there is one, or move Block 01 to Thursday morning before the sit-down and shoot indoors first on Wednesday.</p>
+  </div>
+</section>
+
+<!-- SCHEDULE -->
+<section class="section" id="schedule">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Run of show</p><span class="count">about five hours · adjust call to sunrise</span></div>
+    <h2>The <em>morning</em></h2>
+    <table class="sched">
+      <tr><td class="t">7:00</td><td class="w"><b>Crew call.</b> Build both bodies, match settings, jam timecode, ND on A, balance the gimbal with the ND on, test AF and IS on one gimbal pass.</td><td class="who">crew</td></tr>
+      <tr><td class="t">7:15</td><td class="w"><b>Cast call: John and Leslie</b>, in the car, dressed. Lav on John. Pick the parking space against the sun.</td><td class="who">J&amp;L · crew</td></tr>
+      <tr><td class="t">7:20–8:15</td><td class="w"><b>Block 01 · The lot.</b> Shots 1.1–1.8, exteriors 5.1 while the light is low.</td><td class="who">J&amp;L</td></tr>
+      <tr><td class="t">8:15–8:45</td><td class="w"><b>Block 02 · The hallway.</b> 2.1 first, while the sun still comes through the door. Then 2.2–2.5.</td><td class="who">J&amp;L</td></tr>
+      <tr><td class="t">8:45</td><td class="w"><b>Team call:</b> Parker, Adam, Erin, Jon, Johnny. Countdown running on the display. Light set in the green room.</td><td class="who">team</td></tr>
+      <tr><td class="t">9:00–10:15</td><td class="w"><b>Block 03 · The green room.</b> Both cameras rolling before the door opens. Greetings (the real one, then one more pass), the flow review, the clock, the prayer, amen.</td><td class="who">J&amp;L · team</td></tr>
+      <tr><td class="t">10:15</td><td class="w"><b>Release the team.</b> Keep the audio tech and the production team for the room. Auditorium look on, haze up.</td><td class="who">production</td></tr>
+      <tr><td class="t">10:30–11:30</td><td class="w"><b>Block 04 · The walk and the door.</b> 4.1–4.9 with John; then 4.10 with John and Leslie together, twice.</td><td class="who">J&amp;L</td></tr>
+      <tr><td class="t">11:30–12:00</td><td class="w"><b>Block 05 · Pickups.</b> Empty rooms, the clock, backstage textures, room tone. Offload both cameras and the recorder before anything is packed.</td><td class="who">crew</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- WRAP -->
+<section class="section wrapup" id="wrap">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Before you strike</p><span class="count"></span></div>
+    <h2>Wrap <em>check</em></h2>
+    <ul class="rules">
+      <li><strong>Four doors, four holds.</strong> Car door, back door (both sides), green-room door, backstage door (both sides), each with five seconds of hold after it closes.</li>
+      <li><strong>The hard sync.</strong> Do you have the team turning to greet them, from inside the room, with sound, at 24?</li>
+      <li><strong>The prayer at real time</strong> on both cameras, with the lav running.</li>
+      <li><strong>The reveal from behind at 24 and at 48</strong>, three takes each, exposed for the stage.</li>
+      <li><strong>John and Leslie walking into the service together</strong>, twice.</li>
+      <li><strong>One clean wide per block</strong> and far more tight than wide everywhere else.</li>
+      <li><strong>Room tone in all four spaces.</strong></li>
+      <li><strong>Both cards and the recorder offloaded</strong> and verified before anything leaves the building.</li>
+    </ul>
+    <p style="margin:1.5rem 0 0"><a href="#" id="reset" class="btn">Clear all ticks on this device</a></p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    Prepared for the Wednesday 7 October intro-scene shoot · The Life Church 30th Anniversary film · Brian Pitre, Creative &amp; Production.<br>
+    Voiceover lines are quoted from the 30th Anniversary Script as written; the beat times are a planning estimate. Focal lengths are for the Komodo-X Super 35 sensor (27.03 × 14.26 mm); “full-frame feel” multiplies by 1.33.
+  </div>
+</footer>
+
+<script>
+(function(){
+  var KEY='tlc-30th-intro-shoot-2026-10-07';
+  var boxes=[].slice.call(document.querySelectorAll('input[type=checkbox][data-id]'));
+  var saved={};
+  try{saved=JSON.parse(localStorage.getItem(KEY)||'{}')||{};}catch(e){saved={};}
+  function persist(){try{localStorage.setItem(KEY,JSON.stringify(saved));}catch(e){}}
+  function update(){
+    var done=0;boxes.forEach(function(b){if(b.checked)done++;});
+    document.getElementById('progress').textContent=done+' / '+boxes.length;
+    document.getElementById('shot-total').textContent=boxes.length;
+    [].slice.call(document.querySelectorAll('.block')).forEach(function(s){
+      var bs=[].slice.call(s.querySelectorAll('input[data-id]'));var d=0;bs.forEach(function(b){if(b.checked)d++;});
+      var el=s.querySelector('.block-count');if(el)el.textContent=d+'/'+bs.length;
+      s.classList.toggle('done',bs.length>0&&d===bs.length);
+    });
+  }
+  boxes.forEach(function(b){
+    if(saved[b.getAttribute('data-id')])b.checked=true;
+    b.addEventListener('change',function(){saved[b.getAttribute('data-id')]=b.checked;persist();update();});
+  });
+  document.getElementById('reset').addEventListener('click',function(e){
+    e.preventDefault();
+    if(!window.confirm('Clear all ticks on this device?'))return;
+    boxes.forEach(function(b){b.checked=false;});saved={};
+    try{localStorage.removeItem(KEY);}catch(e){}
+    update();
+  });
+  update();
+})();
+</script>
+</body>
+</html>
